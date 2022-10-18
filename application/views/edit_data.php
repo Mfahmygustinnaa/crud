@@ -8,7 +8,7 @@
         <h1>Input Data Mahasiswa</h1>
     </center>
     <?php foreach($mahasiswa as $u) { ?>
-    <form action="<?php echo base_url(). 'index.php/kampus/update'; ?>" method="post" enctype="multipart?form-data">
+    <form action="<?php echo base_url(). 'index.php/kampus/update'; ?>" method="post" enctype="multipart/form-data">
         <table style="margin:20px auto;">
             <tr>
                 <td>NIM</td>
@@ -30,6 +30,13 @@
             <tr>
                 <td>Pekerjaan</td>
                 <td><input type="text" name="pekerjaan" value="<?php echo $u->pekerjaan ?>"></td>
+            </tr>
+            <tr>
+                <td><img src="<?php echo base_url();?><?php echo $u->foto ?>" width="80" height="80"></td>
+            </tr>
+            <tr>
+                <td>Upload Foto</td>
+                <td><input type="file" name="foto"></td>
             </tr>
             <tr>
                 <td></td>

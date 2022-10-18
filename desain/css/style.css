@@ -1,0 +1,61 @@
+div {
+    border-radius: 2px;
+    background-color: gold;
+    padding: 10px;
+}
+
+#tampilantabel {
+    font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#tampilantabel td, #tampilantabel th{
+    border: 1px solid ye;
+    padding: 8px;
+}
+
+#tampilantabel tr:nth-child(even){background-color: yellow;}
+#tampilantabel tr:hover {background-color: #ddd;}
+
+#tampilantabel th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #f5df4d;
+    color: white;
+}
+
+input[type=text],input[type=password], select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=text], input[type=password]:focus{
+    background-color: lightblue;
+}
+
+input[type=submit], input[type=buttom], input[type=reset] {
+    background-color: aquamarine;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 5px 8px;
+    cursor: pointer;
+    border-radius: 4px;
+    float: right;
+}
+
+input[type=submit]:hover{
+    background-color: #45a049;
+}
+
+img {
+    border-radius: 80%;
+}

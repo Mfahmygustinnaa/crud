@@ -2,10 +2,11 @@
 <html>
 <head>
     <title>Tampil Data</title>
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url()  ?>desain/css/style.css">
 </head>
 <body>
     <center><h1>Data Mahasiswa</h1></center>
-    <table style="margin:20px auto;" border="1">
+    <table style="margin:20px auto;" border="1" id="tampilantabel">
         <tr>
             <th>No</th>
             <th>NIM</th>
@@ -25,10 +26,10 @@
             <td><?php echo $u->nama ?></td>
             <td><?php echo $u->alamat ?></td>
             <td><?php echo $u->pekerjaan ?></td>
-            <td><img src="<?php echo base_url();?><?php echo $u->foto ?>" width="50" height="50"></td>
+            <td><img src="<?php echo base_url();?><?php echo $u->foto ?>"width="80" height="80"></td>
             <td>
-                    <?php echo anchor('kampus/edit/'.$u->id, 'Edit'); ?>
-                    <?php echo anchor('kampus/hapus/'.$u->id, 'Hapus'); ?>
+                <?php echo anchor('kampus/edit/'.$u->id, 'Edit'); ?>
+                <?php echo anchor('kampus/hapus/'.$u->id, 'Hapus'); ?>
             </td>
         </tr>
         <?php } ?>
